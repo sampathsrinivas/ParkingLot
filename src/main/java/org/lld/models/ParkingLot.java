@@ -1,6 +1,6 @@
 package org.lld.models;
 
-import org.lld.models.enums.ParkingLotStatus;
+import org.lld.models.enums.Status;
 import org.lld.models.enums.VehicleType;
 
 import java.util.HashMap;
@@ -15,7 +15,7 @@ public class ParkingLot extends BaseModel{
     private String name;
     private String address;
 
-    private ParkingLotStatus parkingLotStatus;
+    private Status parkingLotStatus;
 
     public List<ParkingFloor> getParkingFloors() {
         return parkingFloors;
@@ -59,11 +59,11 @@ public class ParkingLot extends BaseModel{
         this.address = address;
     }
 
-    public ParkingLotStatus getParkingLotStatus() {
+    public Status getParkingLotStatus() {
         return parkingLotStatus;
     }
 
-    public void setParkingLotStatus(ParkingLotStatus parkingLotStatus) {
+    public void setParkingLotStatus(Status parkingLotStatus) {
         this.parkingLotStatus = parkingLotStatus;
     }
 

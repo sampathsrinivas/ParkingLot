@@ -1,12 +1,14 @@
 package org.lld.models;
 
-import org.lld.models.enums.ParkingSlotStatus;
+import org.lld.models.enums.Status;
 
 public class ParkingSlot {
 
     private Vehicle vehicle;
 
     private int spotNumber;
+
+    private Status parkingSlotStatus;
 
     public Vehicle getVehicle() {
         return vehicle;
@@ -24,13 +26,13 @@ public class ParkingSlot {
         this.spotNumber = spotNumber;
     }
 
-    public ParkingSlotStatus getParkingSlotStatus() {
+    public Status getParkingSlotStatus() {
         return parkingSlotStatus;
     }
 
-    public void setParkingSlotStatus(ParkingSlotStatus parkingSlotStatus) {
+    public void setParkingSlotStatus(Status parkingSlotStatus) {
         this.parkingSlotStatus = parkingSlotStatus;
     }
 
-    private ParkingSlotStatus parkingSlotStatus;
+
 }
